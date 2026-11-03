@@ -31,8 +31,8 @@
 - [x] **Step 2: Focus.** Student picks a focus and gives the reason.
 - [ ] **Step 3: Interview.** Cover the problem, the user, the smallest v1, what's out, success criteria, and research (APIs, competitors, data). *Done: user, v1, success test (the student is keeping only the v1 test), building research. Remaining: what's out, the v2 scope.*
 - [ ] **Step 4: User interviews.** Agent writes the questions. Student runs 3 or more interviews and pastes notes. *(Schedule these early, since the deadline is tomorrow.)*
-- [ ] **Step 5: Roadmap.** Dates: Nov 10 start, Nov 17 v1 (works end to end), Nov 24 no class, Dec 1 v2 at the fair.
-- [ ] **Step 6: Tech stack.** Stack, MCP servers, and CLIs, with the reason each fits the idea. Cover free-tier limits and spending alerts for each service.
+- [x] **Step 5: Roadmap.** Dates: Nov 10 start, Nov 17 v1 (works end to end), Nov 24 no class, Dec 1 v2 at the fair.
+- [x] **Step 6: Tech stack.** Stack, MCP servers, and CLIs, with the reason each fits the idea. Cover free-tier limits and spending alerts for each service.
 - [ ] **Step 7: Draft page.** Write `index.html` (single static file). The student reviews and rewrites it.
 - [ ] **Step 8: Publish.** Create the GitHub repo, then deploy to Vercel from the student's account (not an anonymous deploy, which expires).
 - [ ] **Step 9: Quiz and submit.**
@@ -60,8 +60,16 @@ _(The agent records the student's decisions here as they're made.)_
 - **Accounts: two leaderboards.** One for fastest time and one for most destruction points. Signing in puts your runs on them.
 - **Focus: Systems.** The student's reason: "I want to explore web based games and physics destruction."
 - **v2 (Dec 1, fair):** more floors (2nd, 1st, lower level, connected by the stairwell) and the finale (floors and walls become breakable, and the building collapses).
-- **Out (proposed by the agent from the unpicked v2 candidates; the student hasn't confirmed):** more weapons, live leaderboards on a fair screen, server-side score checks, and polish (sound, particles, screen shake).
+- **Finale is partly faked (the student's design):** outside, the player can only attack the building's front facade. Once enough of it is destroyed, the collapse begins. Dust rises as a smokescreen while the game switches to a preset rubble scene of the destroyed building. Breaking floors and walls indoors is no longer needed, and the facade is the only structural destruction.
+- **Out (confirmed by the student):** more weapons, live leaderboards on a fair screen, server-side score checks, and general polish (sound, particles, screen shake). Exception: the finale's dust cloud is in, because the scene switch depends on it.
 - **Repo:** https://github.com/carnowell-uchicago/dbs-p_final_proposal (public). The student will link it to Vercel. The course PDF is gitignored.
+- **Title (WIP):** "MPCS Wars: The Student Strikes Back"
+- **One-liner (final, approved by the student):** "MPCS students need a way to blow off steam during finals week, so this game lets them enjoy a humorous imagining of destroying Crerar Library after hours, when there are no witnesses." The student kept "no witnesses" on purpose as a joke.
+- **Tech stack:** Unity 6 (Personal) web build; Vercel (Hobby) for static hosting, with a `vercel.json` for the compressed build files; **Supabase** (free) for auth and for Postgres tables of runs and leaderboards. Sign-up happens on the web page around the game, and the session is passed into Unity. Code is on GitHub. Tools: Unity CLI and MCP, Supabase MCP and CLI, Vercel CLI, git, and Playwright MCP for testing the deployed build. Free-tier note: Supabase pauses free projects after about a week of inactivity, so keep it active or wake it up before the fair.
+- **Roadmap (the student approved it "for now"; they'll work through Thanksgiving):**
+  - **Nov 10–17 (v1).** Day 1: an empty Unity web build deployed to Vercel. Days 1–3: a rough 3rd floor with breakable windows, chairs, tables and the stairwell door, plus physics-based scoring. Day 3: the stapler and fire extinguisher, with the door requiring the extinguisher. Day 4: sign-up and the two leaderboards. Day 5: classmate playtest.
+  - **Nov 17–24.** The 2nd floor, 1st floor and lower level, reusing props. Decide whether scores are per floor or for the whole run. Fix playtest issues.
+  - **Nov 24–Dec 1.** The front facade of breakable limestone blocks, the collapse trigger, the dust cloud, the rubble scene, and a full-run playtest. Then v2 at the fair.
 - **Success criteria:** the v1 test only. The student declined a Dec 1 engagement target.
 - **v1 success test:** a classmate can sign up, beat the 3rd floor, and their score is still on the leaderboard afterward.
 - **Structural destruction comes last.** Floors and walls stay intact until the finale, because breaking them is what can bring the whole building down. Before the finale, everything breakable is furniture and fixtures. The player moves between floors through the main stairwell, reached by breaking its door.

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MPCS Wars: The Student Strikes Back · Project Proposal</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+      line-height: 1.6;
+      color: #1a1a1a;
+    }
+    h1 { font-size: 2.4rem; margin-bottom: 0; }
+    h2 { margin-top: 2.5rem; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+    .sub { color: #666; margin-top: 4px; }
+    .oneliner { font-size: 1.25rem; border-left: 4px solid #c8102e; padding-left: 16px; }
+    blockquote { margin: 12px 0; padding-left: 16px; border-left: 3px solid #ccc; color: #444; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid #eee; }
+    .todo { background: #fff3cd; padding: 2px 6px; }
+  </style>
+</head>
+<body>
+
+  <h1>MPCS Wars: The Student Strikes Back</h1>
+  <p class="sub">Project proposal · Design, Build, Ship · MPCS 51238 · Autumn 2026</p>
+
+  <p class="oneliner">MPCS students need a way to blow off steam during finals week, so this game lets them enjoy a humorous imagining of destroying Crerar Library after hours, when there are no witnesses.</p>
+
+  <h2>How it works</h2>
+  <p>You start on the 3rd floor of a (loosely recreated) John Crerar Library, armed with a red stapler. Smash windows, knock over chairs, crack tables. Find the fire extinguisher, then use it to break down the door to the main stairwell and head down a floor.</p>
+  <p>Props don't have fixed point values. Your score comes from how you destroy them: how hard and how squarely you hit, and how completely the pieces separate.</p>
+  <p>Two leaderboards: <strong>fastest time</strong> to break out of the floor, and <strong>most destruction points</strong>.</p>
+  <p>Floors and walls stay standing until the end. Once you're outside, you attack the front of the building until it starts to collapse.</p>
+
+  <h2>Users</h2>
+  <p>MPCS students during finals week.</p>
+  <p class="todo">[Student: add what at least 3 classmates told you, in their words.]</p>
+  <blockquote>"…" — [classmate 1]</blockquote>
+  <blockquote>"…" — [classmate 2]</blockquote>
+  <blockquote>"…" — [classmate 3]</blockquote>
+
+  <h2>Focus: Systems</h2>
+  <p>I want to explore web based games and physics destruction.</p>
+
+  <h2>Roadmap</h2>
+  <table>
+    <tr><th>Week</th><th>Build</th></tr>
+    <tr><td><strong>Nov 10–17<br>v1</strong></td><td>The 3rd floor: breakable windows, chairs, tables, and the stairwell door. Red stapler and fire extinguisher. Physics-based scoring. Sign up and two leaderboards. <br><em>Done when:</em> a classmate can sign up, beat it, and have their score persist on the leaderboard.</td></tr>
+    <tr><td><strong>Nov 17–24</strong></td><td>The 2nd floor, 1st floor, and lower level, connected by the stairwell.</td></tr>
+    <tr><td><strong>Nov 24–Dec 1<br>v2 (fair)</strong></td><td>The finale: break the front facade until the building starts to collapse, then the dust cloud covers a cut to the rubble.</td></tr>
+  </table>
+  <p><strong>Not building:</strong> more weapons, a live leaderboard screen at the fair, server-side score checks, and general polish (sound, particles, screen shake).</p>
+
+  <h2>Tech stack</h2>
+  <table>
+    <tr><th>Tool</th><th>Why</th></tr>
+    <tr><td>Unity 6 (web build)</td><td>Built-in physics with breakable joints for the destruction. I've built with Unity and Claude Code before.</td></tr>
+    <tr><td>Supabase</td><td>Sign up, plus Postgres tables for runs and both leaderboards.</td></tr>
+    <tr><td>Vercel</td><td>Hosts the game's web build.</td></tr>
+    <tr><td>GitHub</td><td>Code.</td></tr>
+  </table>
+  <p><strong>MCP servers and CLIs:</strong> Unity CLI and MCP (building scenes and running web builds), Supabase MCP and CLI (tables and database changes), Vercel CLI (deploys), and Playwright MCP (testing the deployed game in a browser).</p>
+
+</body>
+</html>

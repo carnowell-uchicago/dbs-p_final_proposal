@@ -30,7 +30,7 @@
 - [x] **Step 1: Ideas.** Student lists ideas. Agent asks about each one. Student picks one.
 - [x] **Step 2: Focus.** Student picks a focus and gives the reason.
 - [ ] **Step 3: Interview.** Cover the problem, the user, the smallest v1, what's out, success criteria, and research (APIs, competitors, data). *Done: user, v1, success test (the student is keeping only the v1 test), building research. Remaining: what's out, the v2 scope.*
-- [ ] **Step 4: User interviews.** Agent writes the questions. Student runs 3 or more interviews and pastes notes. *(Schedule these early, since the deadline is tomorrow.)*
+- [x] **Step 4: User interviews.** Agent writes the questions. Student runs 3 or more interviews and pastes notes. *(Schedule these early, since the deadline is tomorrow.)*
 - [x] **Step 5: Roadmap.** Dates: Nov 10 start, Nov 17 v1 (works end to end), Nov 24 no class, Dec 1 v2 at the fair.
 - [x] **Step 6: Tech stack.** Stack, MCP servers, and CLIs, with the reason each fits the idea. Cover free-tier limits and spending alerts for each service.
 - [ ] **Step 7: Draft page.** Write `index.html` (single static file). The student reviews and rewrites it.

@@ -1,0 +1,4 @@
+# Course brief (not ours to publish)
+*.pdf
+.DS_Store
+.vercel

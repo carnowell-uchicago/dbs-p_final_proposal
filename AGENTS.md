@@ -34,7 +34,7 @@
 - [x] **Step 5: Roadmap.** Dates: Nov 10 start, Nov 17 v1 (works end to end), Nov 24 no class, Dec 1 v2 at the fair.
 - [x] **Step 6: Tech stack.** Stack, MCP servers, and CLIs, with the reason each fits the idea. Cover free-tier limits and spending alerts for each service.
 - [ ] **Step 7: Draft page.** Write `index.html` (single static file). The student reviews and rewrites it.
-- [ ] **Step 8: Publish.** Create the GitHub repo, then deploy to Vercel from the student's account (not an anonymous deploy, which expires).
+- [x] **Step 8: Publish.** Create the GitHub repo, then deploy to Vercel from the student's account (not an anonymous deploy, which expires).
 - [ ] **Step 9: Quiz and submit.**
 
 ## Page must cover (assessment checklist)
@@ -62,7 +62,7 @@ _(The agent records the student's decisions here as they're made.)_
 - **v2 (Dec 1, fair):** more floors (2nd, 1st, lower level, connected by the stairwell) and the finale (floors and walls become breakable, and the building collapses).
 - **Finale is partly faked (the student's design):** outside, the player can only attack the building's front facade. Once enough of it is destroyed, the collapse begins. Dust rises as a smokescreen while the game switches to a preset rubble scene of the destroyed building. Breaking floors and walls indoors is no longer needed, and the facade is the only structural destruction.
 - **Out (confirmed by the student):** more weapons, live leaderboards on a fair screen, server-side score checks, and general polish (sound, particles, screen shake). Exception: the finale's dust cloud is in, because the scene switch depends on it.
-- **Repo:** https://github.com/carnowell-uchicago/dbs-p_final_proposal (public). The student will link it to Vercel. The course PDF is gitignored.
+- **Repo:** https://github.com/carnowell-uchicago/dbs-p_final_proposal (public). **Live:** https://dbs-pfinalproposal.vercel.app/ (from the student's Vercel account, auto-deploys on push). The course PDF is gitignored.
 - **Title (WIP):** "MPCS Wars: The Student Strikes Back"
 - **One-liner (final, approved by the student):** "MPCS students need a way to blow off steam during finals week, so this game lets them enjoy a humorous imagining of destroying Crerar Library after hours, when there are no witnesses." The student kept "no witnesses" on purpose as a joke.
 - **Tech stack:** Unity 6 (Personal) web build; Vercel (Hobby) for static hosting, with a `vercel.json` for the compressed build files; **Supabase** (free) for auth and for Postgres tables of runs and leaderboards. Sign-up happens on the web page around the game, and the session is passed into Unity. Code is on GitHub. Tools: Unity CLI and MCP, Supabase MCP and CLI, Vercel CLI, git, and Playwright MCP for testing the deployed build. Free-tier note: Supabase pauses free projects after about a week of inactivity, so keep it active or wake it up before the fair.

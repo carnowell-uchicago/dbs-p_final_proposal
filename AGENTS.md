@@ -29,22 +29,22 @@
 
 - [x] **Step 1: Ideas.** Student lists ideas. Agent asks about each one. Student picks one.
 - [x] **Step 2: Focus.** Student picks a focus and gives the reason.
-- [ ] **Step 3: Interview.** Cover the problem, the user, the smallest v1, what's out, success criteria, and research (APIs, competitors, data). *Done: user, v1, success test (the student is keeping only the v1 test), building research. Remaining: what's out, the v2 scope.*
+- [x] **Step 3: Interview.** Cover the problem, the user, the smallest v1, what's out, success criteria, and research (APIs, competitors, data). *Done: user, v1, success test (the student is keeping only the v1 test), building research. Remaining: what's out, the v2 scope.*
 - [x] **Step 4: User interviews.** Agent writes the questions. Student runs 3 or more interviews and pastes notes. *(Schedule these early, since the deadline is tomorrow.)*
 - [x] **Step 5: Roadmap.** Dates: Nov 10 start, Nov 17 v1 (works end to end), Nov 24 no class, Dec 1 v2 at the fair.
 - [x] **Step 6: Tech stack.** Stack, MCP servers, and CLIs, with the reason each fits the idea. Cover free-tier limits and spending alerts for each service.
-- [ ] **Step 7: Draft page.** Write `index.html` (single static file). The student reviews and rewrites it.
+- [x] **Step 7: Draft page.** Write `index.html` (single static file). The student reviews and rewrites it.
 - [x] **Step 8: Publish.** Create the GitHub repo, then deploy to Vercel from the student's account (not an anonymous deploy, which expires).
-- [ ] **Step 9: Quiz and submit.**
+- [x] **Step 9: Quiz and submit.** The student skipped the quiz. Submitting is the student's job.
 
 ## Page must cover (assessment checklist)
 
-- [ ] One-line description: the problem and the user
-- [ ] Users: who they are and what they told you
-- [ ] Focus (Holistic / Design / Systems / AI) and why
-- [ ] Roadmap: each week, what's in v1 (Nov 17), and what's in v2 (Dec 1)
-- [ ] Tech stack, MCP servers, and CLIs, and why they fit
-- [ ] Static HTML on Vercel, with a GitHub repo
+- [x] One-line description: the problem and the user
+- [x] Users: who they are and what they told you
+- [x] Focus (Holistic / Design / Systems / AI) and why
+- [x] Roadmap: each week, what's in v1 (Nov 17), and what's in v2 (Dec 1)
+- [x] Tech stack, MCP servers, and CLIs, and why they fit
+- [x] Static HTML on Vercel, with a GitHub repo
 
 ## Decisions log
 
@@ -87,3 +87,5 @@ _(The agent records the student's decisions here as they're made.)_
 - Crerar facts (from research): 4 levels, meaning 3 above ground plus a lower level. Opened 1984, designed by Stubbins Associates, in a late-Brutalist style. The whole facade is limestone, with vertical window patterns that echo the Gothic campus. The building was later renovated for CS (Payette). The lower level has compact shelving, a computer cluster and classroom, and the Kathleen A. Zar Room (Weston Game Lab). Floor plans are mentioned on CS Discuss (discuss.cs.uchicago.edu/t/crerar-building-floor-plans/916).
 - Level idea: 3rd floor, then 2nd, then 1st, then the lower level. The finale could be smashing into the basement where the fair is happening, or going outside to break the limestone walls. The student decides.
 - Tone risk: "angry at the university" plus an RPG, shown at a university event. Keep it comic: no people, absurd weapons, stress-relief framing. Avoid official logos.
+- **Privacy:** never put student names in the project. Use Student 1, 2 and 3.
+- **Next phase:** the game build starts Nov 10, following the roadmap above.
